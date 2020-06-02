@@ -17,5 +17,11 @@
     # Clone this repositories
     git clone https://github.com/leandro-wrf/deno-crud.git
 
+    # Before create your database in postgres
+
     # Run application
     cd deno-crud && deno run --allow-net src/server.ts
+
+
+<h1>License</h1>
+<p>License MIT.</p>
