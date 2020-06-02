@@ -5,7 +5,7 @@ import UserController from './controllers/UserController.ts';
 const routes = new Router();
 
 routes
-  .get("/user", UserController.index)
+  .get("/users", UserController.index)
   .post("/user", UserController.create)
   .put("/user/:id", UserController.update)
   .delete("/user/:id", UserController.delete)

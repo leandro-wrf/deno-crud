@@ -1,9 +1,9 @@
 import { RouterContext, BodyReader } from 'https:/deno.land/x/oak/mod.ts';
-import { Use } from '../models/User.ts';
+import { User } from '../models/User.ts';
 
 class UserController {
   async index(context: RouterContext):Promise<any> {
-    const data = await Use.all();
+    const data = await User.all();
 
     return context.response.body = data;
   }
@@ -16,7 +16,7 @@ class UserController {
     })
 
     try {
-      await Use.create({
+      await User.create({
         user: value.user
       })
     } catch (error) {
@@ -35,7 +35,7 @@ class UserController {
     })
 
     try {
-      await Use.where('id', id).update('user', value.user)
+      await User.where('id', id).update('user', value.user)
     } catch (error) {
       return console.log(error)
     }
@@ -47,7 +47,7 @@ class UserController {
     const id = context.params.id;
 
     try {
-      await Use.where('id', id).delete();
+      await User.where('id', id).delete();
     } catch (error) {
       return console.log(error)
     }
