@@ -1,5 +1,5 @@
 <h1>
-  Simple CRUD use Oak and dbDeno
+  Simple CRUD using oak and denodb
 </h1>
 
 <p align="center">
@@ -11,6 +11,14 @@
   <img src="https://img.shields.io/github/last-commit/leandro-wrf/deno-crud?color=000&style=for-the-badge" />
   <img src="https://img.shields.io/github/license/leandro-wrf/deno-crud?color=000&style=for-the-badge" />
 </p>
+
+<h3>Technologies this project</h3>
+  <ul>
+    <li>Deno</li>
+    <li>Oak</li>
+    <li>DenoDB</li>
+    <li>Typescript</li>
+  </ul>
 
 <h3>How to use</h3>
 
